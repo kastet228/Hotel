@@ -1,0 +1,741 @@
+@bg-color: #121d39;
+@logo-color: #17C2ED;
+@list-color: white;
+@radius-btn: 100px;
+@radius-btn-info: 27px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.section{
+    width: 100%;
+ }
+ .container{
+     max-width: 1270px;
+     margin: 0 auto;
+ }
+
+ ul{
+    list-style: none;
+    
+}
+/*------шапка---------*/
+.header{
+    background: @bg-color;
+}
+body{
+    font-family: "poppinsmedium", "arial", sans-serif;
+}
+
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__list{
+        margin-top: 54px;
+        display: flex;
+        font-size: 15px;
+        .home{
+            margin-right: 80px;
+            margin-left:255px;
+            color: @list-color;
+            &:hover{
+                color: darken(@list-color, 15%);
+            }
+        }
+        .featured{
+            margin-right: 75px;
+            color: @list-color;
+            &:hover{
+                color: darken(@list-color, 15%);
+            }
+        }
+        .pricing{
+            margin-right: 80px;
+            color: @list-color;
+            &:hover{
+                color: darken(@list-color, 15%);
+            }
+        }
+        .contack{
+            margin-right: 236px;
+            color: @list-color;
+            &:hover{
+                color: darken(@list-color, 15%);
+            }
+        }
+        .signup{
+            margin-right: 25px;
+            color: @list-color;
+            &:hover{
+                color: darken(@list-color, 15%);
+            }
+        }
+    }
+    .logo{
+        margin-top: 54px;
+        font-size: 20px;
+        background: linear-gradient(108.34deg, #17C2ED 4.55%, #1C7DD7 95.45%), #FFFFFF;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-emphasis-color: transparent;
+    }
+    .login{
+        border: none;
+        font-size: 15px;
+        border-radius: @radius-btn;
+        background: linear-gradient(108.34deg, #17C2ED 4.55%, #1C7DD7 95.45%), linear-gradient(0deg, #BFBFBF, #BFBFBF), #FFFFFF;
+        color: @list-color;
+        width: 128px;
+        height: 49px;
+        margin-top: 40px;
+        &:hover{
+            background: darken(@logo-color, 15%);
+        }
+    }
+
+    
+}
+
+/*------main-top---------*/
+
+.main-top__wrapper{
+    background: url("../img/Rectangle 42.svg") no-repeat center;
+    
+}
+
+.main-top{
+    display: flex;
+    flex-direction: row;
+    
+    .btn-list{
+        border: none;
+        margin-top: 95px;
+        font-size: 18px;
+        width: 159px;
+        height: 50px;
+        border-radius: 15px;
+        background: rgba(white, 0.25);
+        color: @list-color;
+        text-align: center;
+
+    }
+    .preview1{
+        margin-top: 7px;
+        font-size: 55px;
+        color: @list-color;
+        max-width: 500px;
+    }
+    .preview2{
+        margin-top: 30px;
+        font-size: 25px;
+        color: @list-color;
+        opacity: 0.5;
+        max-width: 550px;
+    }
+    .btn-info{
+        border: none;
+        margin-top: 68px;
+        font-size: 25px;
+        width: 263px;
+        height: 91px;
+        border-radius: @radius-btn-info;
+        background: linear-gradient(108.34deg, #17C2ED 4.55%, #1C7DD7 95.45%), linear-gradient(0deg, #BFBFBF, #BFBFBF), #FFFFFF;
+        color: @list-color;
+        &:hover{
+            background: darken(@logo-color, 15%);
+        }
+    }
+    .circle{
+        width: 747px;
+        height: 747px;
+        border-radius: 100%;
+        background: rgba(27, 138, 219, 0.22);
+        position: relative;
+        left: 60px;
+        &::after{
+            content: "";
+            position: absolute;
+            background: url("../img/Group 6.svg") no-repeat ;
+            transform: rotate(200deg);
+            width: 100px;
+            height: 100px;
+            right: 0;
+            bottom: 50px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            background: url("../img/Group 6.svg") no-repeat ;
+            width: 100px;
+            height: 100px;
+            left: -30px;
+            top: 50px;
+        }
+        img {
+            position: absolute;
+            top: 50px;
+            left: 80px;  
+        }
+       
+    }
+    
+    .img-preview{
+        width: 592px;
+        height: 820px;        
+        margin-left: 20px;
+        margin-bottom: 24px;
+        border-radius: 86px;
+     
+    }
+}
+
+/*------main-middle---------*/
+
+.main-middle{
+    display: flex;
+    flex-direction: column;
+
+    .featured{
+        text-align: center;
+        margin-top: 200px;
+
+        .featured-head{
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 45px;
+
+            color: #17C1ED;
+        }
+
+        .featured-mid{
+            font-weight: 600;
+            font-size: 55px;
+            line-height: 82px;
+
+            color: #101729;
+        }
+    }
+
+
+
+    .Ghazi{
+       
+        display: flex;
+        flex-direction: row;
+        margin-top: 128px;
+        
+        .hotel-pictures{
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                background: url("../img/Group 6.svg") no-repeat ;
+                transform: rotate(250deg);
+                width: 100px;
+                height: 100px;
+                right: -950px;
+                bottom: 300px;
+            }
+          
+            .img-ghazi{
+                width: 362px;
+                height: 424px;
+        
+                background: url(image.png);
+                border-radius: 60px;
+
+               
+
+                
+            }
+            .hotel-circle{
+                position: absolute;
+                width: 68px;
+                height: 68px;
+                right: 20px;
+                bottom: 20px;
+                border: none;
+                
+                &:hover{
+                    background: rgba(white, 0.5);
+                }
+
+                background: rgba(white, 0.25);
+                border-radius: 34px;    
+               
+                padding-top: 5px;
+                padding-left: 5px;
+
+               .arrow{
+                   stroke: white;
+               }
+            }
+
+        }
+        
+
+        .hotel-body{
+            margin-top: 50px;
+
+            .hotel-name{
+                margin-left: 70px;
+                font-weight: 600;
+                font-size: 45px;
+                line-height: 68px;
+    
+                color: #101729;
+    
+            }
+    
+            .hotel-text{
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 38px;
+                margin-left: 70px;
+                max-width: 450px;
+                margin-top: 15px;
+
+                color: #101729;
+    
+                opacity: 0.5;
+            }
+    
+            .btn-hotel{
+                border: none;
+                margin-left: 70px;
+                margin-top: 60px;
+                font-size: 20px;
+                width: 223px;
+                height: 79px;
+                border-radius: @radius-btn-info;
+                background: linear-gradient(108.34deg, #17C2ED 4.55%, #1C7DD7 95.45%), linear-gradient(0deg, #BFBFBF, #BFBFBF), #FFFFFF;
+                color: @list-color;
+                &:hover{
+                    background: darken(@logo-color, 15%);
+                }
+            }
+        }
+
+        
+    }
+
+
+    .Arslan{
+       
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+        margin-left: 420px;
+
+        .hotel-pictures{
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                background: url("../img/Group 6.svg") no-repeat ;
+                transform: rotate(90deg);
+                width: 100px;
+                height: 100px;
+                left: -430px;
+                top: 170px;
+            }
+            .img-arslan{
+                width: 362px;
+                height: 424px;
+                
+        
+                background: url(image.png);
+                border-radius: 60px;
+
+                
+            }
+            .hotel-circle{
+                position: absolute;
+                width: 68px;
+                height: 68px;
+                right: 20px;
+                bottom: 20px;
+                border: none;
+                
+                &:hover{
+                    background: rgba(white, 0.5);
+                }
+
+                padding-top: 5px;
+                padding-left: 5px;
+
+                background: rgba(white, 0.25);
+                border-radius: 34px;    
+               
+               .arrow{
+                   stroke: white;
+               }
+            }
+
+        }
+        
+
+        .hotel-body{
+            margin-top: 50px;
+
+            .hotel-name{
+                margin-left: 70px;
+                font-weight: 600;
+                font-size: 45px;
+                line-height: 68px;
+    
+                color: #101729;
+    
+            }
+    
+            .hotel-text{
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 38px;
+                margin-left: 70px;
+                max-width: 450px;
+                margin-top: 15px;
+
+                color: #101729;
+    
+                opacity: 0.5;
+            }
+    
+            .btn-hotel{
+                border: none;
+                margin-left: 70px;
+                margin-top: 60px;
+                font-size: 20px;
+                width: 223px;
+                height: 79px;
+                border-radius: @radius-btn-info;
+                background: linear-gradient(108.34deg, #17C2ED 4.55%, #1C7DD7 95.45%), linear-gradient(0deg, #BFBFBF, #BFBFBF), #FFFFFF;
+                color: @list-color;
+                &:hover{
+                    background: darken(@logo-color, 15%);
+                }
+            }
+        }
+
+        
+    }
+
+    .Utsman{
+       
+        display: flex;
+        flex-direction: row;
+        margin-top: 128px;
+
+        .hotel-pictures{
+            position: relative;
+            .img-utsman{
+                width: 362px;
+                height: 424px;
+                
+        
+                background: url(image.png);
+                border-radius: 60px;
+
+                
+            }
+            .hotel-circle{
+                position: absolute;
+                width: 68px;
+                height: 68px;
+                right: 20px;
+                bottom: 20px;
+                border: none;
+                
+                &:hover{
+                    background: rgba(white, 0.5);
+                }
+
+                padding-top: 5px;
+                padding-left: 5px;
+
+                background: rgba(white, 0.25);
+                border-radius: 50%;    
+               
+               .arrow{
+                   stroke: white;
+               }
+            }
+
+        }
+        
+
+        .hotel-body{
+            margin-top: 50px;
+
+            .hotel-name{
+                margin-left: 70px;
+                font-weight: 600;
+                font-size: 45px;
+                line-height: 68px;
+    
+                color: #101729;
+    
+            }
+    
+            .hotel-text{
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 38px;
+                margin-left: 70px;
+                max-width: 450px;
+                margin-top: 15px;
+
+                color: #101729;
+    
+                opacity: 0.5;
+            }
+    
+            .btn-hotel{
+                border: none;
+                margin-left: 70px;
+                margin-top: 60px;
+                font-size: 20px;
+                width: 223px;
+                height: 79px;
+                border-radius: @radius-btn-info;
+                background: linear-gradient(108.34deg, #17C2ED 4.55%, #1C7DD7 95.45%), linear-gradient(0deg, #BFBFBF, #BFBFBF), #FFFFFF;
+                color: @list-color;
+                &:hover{
+                    background: darken(@logo-color, 15%);
+                }
+            }
+        }
+
+    }
+}
+
+.main-bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    .featured{
+        text-align: center;
+        margin-top: 256px;
+
+        .featured-head{
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 45px;
+
+            color: #17C1ED;
+        }
+
+        .featured-mid{
+            font-weight: 600;
+            font-size: 55px;
+            line-height: 82px;
+
+            color: #101729;
+        }
+    }
+
+    .main-bot1{
+        display: flex;
+        flex-direction: row;
+        margin-top: 98px;
+
+        .text-bot{
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-left: 77px;
+
+            .textbot-head{
+                font-weight: 500;
+                font-size: 45px;
+                line-height: 68px;
+            }
+            
+            .erturul{
+                display: flex;
+                flex-direction: row;
+                margin-top: 33px;
+                
+
+                .name-all{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 33px;
+
+                    .name{
+                        font-weight: 500;
+                        font-size: 33px;
+                        line-height: 50px;
+                    }
+
+                    .name-info{
+                        font-weight: 400;
+                        font-size: 25px;
+                        line-height: 38px;
+                        opacity: 0.5;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .textfeedback{
+                margin-top: 60px;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 33px;
+                color: #101729;
+    
+                opacity: 0.5;
+            }
+
+            .stars{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 300px;
+                margin-top: 25px;
+            }
+    
+        }
+
+    }
+
+    .main-bot2{
+        display: flex;
+        flex-direction: row;
+        margin-top: 113px;
+        background-color: #E7F1FC;
+        border-radius: 60px;
+
+        .img-bot2{
+            margin-top: 21px;
+            margin-left: 21px;
+            margin-bottom: 21px;
+        }
+
+        .text-bot2{
+            display: flex;
+            flex-direction: column;
+            margin-top: 97px;
+            margin-left: 77px;
+
+            .textbot-head2{
+                font-weight: 500;
+                font-size: 45px;
+                line-height: 68px;
+                max-width: 500px;
+            }
+
+            .textfeedback2{
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 45px;
+                margin-top: 16px;
+                max-width: 500px;
+                color: #101729;
+
+                opacity: 0.5;
+            }
+            .btn-hotel{
+                border: none;
+                margin-top: 60px;
+                font-size: 20px;
+                width: 223px;
+                height: 79px;
+                border-radius: @radius-btn-info;
+                background: linear-gradient(108.34deg, #17C2ED 4.55%, #1C7DD7 95.45%), linear-gradient(0deg, #BFBFBF, #BFBFBF), #FFFFFF;
+                color: @list-color;
+                &:hover{
+                    background: darken(@logo-color, 15%);
+                }
+            }
+        }
+    }
+
+}
+
+
+.menuf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    &__list{
+        margin-top: 54px;
+        display: flex;
+        font-size: 15px;
+        opacity: 0.5;
+        .home{
+            margin-right: 80px;
+            margin-left:255px;
+            color: black;
+
+            &:hover{
+                color: darken(grey ,15%);
+            }
+        }
+        .featured{
+            margin-right: 75px;
+            color: black;
+
+            &:hover{
+                color: darken(grey ,15%);
+            }
+        }
+        .pricing{
+            margin-right: 80px;
+            color: black;
+
+            &:hover{
+                color: darken(grey ,15%);
+            }
+        }
+        .contack{
+            margin-right: 236px;
+            color: black;
+
+            &:hover{
+                color: darken(grey ,15%);
+            }
+        }
+        .signup{
+            margin-right: 25px;
+            color: black;
+
+            &:hover{
+                color: darken(grey ,15%);
+            }
+        }
+    }
+    .logo{
+        margin-top: 54px;
+        font-size: 20px;
+        background: linear-gradient(108.34deg, #17C2ED 4.55%, #1C7DD7 95.45%), #FFFFFF;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-emphasis-color: transparent;
+    }
+    .login{
+        border: none;
+        font-size: 15px;
+        border-radius: @radius-btn;
+        background: linear-gradient(108.34deg, #17C2ED 4.55%, #1C7DD7 95.45%), linear-gradient(0deg, #BFBFBF, #BFBFBF), #FFFFFF;
+        color: @list-color;
+        width: 128px;
+        height: 49px;
+        margin-top: 40px;
+        &:hover{
+            background: darken(@logo-color, 15%);
+        }
+    }
+
+    
+}
